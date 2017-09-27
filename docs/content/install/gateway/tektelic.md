@@ -33,9 +33,7 @@ upload it to the gateway using TFTP.
 
       * If using Linux, use the following command to upload the file:
 
-```sh
-        tftp <gw_ip_address> -c put customer_conf.json
-```
+            tftp <gw_ip_address> -c put customer_conf.json
 
       * If using Windows, Tftpd32 can be used as both a DHCP server and a TFTP client.
         Tftpd32 can be obtained from http://tftpd32.jounin.net. In order to upload
