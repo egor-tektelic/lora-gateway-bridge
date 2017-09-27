@@ -30,18 +30,19 @@ upload it to the gateway using TFTP.
    to a PC running a private DHCP server.
 3. Upload the `customer_conf.json` file to the gateway. Note that the file name
    must match in order for the changes to take effect.
-   * If using Linux, use the following command to upload the file:
+
+     * If using Linux, use the following command to upload the file:
 
 ```sh
         tftp <gw_ip_address> -c put customer_conf.json
 ```
 
-   * If using Windows, Tftpd32 can be used as both a DHCP server and a TFTP client.
-     Tftpd32 can be obtained from http://tftpd32.jounin.net. In order to upload
-     the file, set the gateway IP address and ensure the remote file name is
-     `customer_conf.json`, as shown in the figure below.
+     * If using Windows, Tftpd32 can be used as both a DHCP server and a TFTP client.
+       Tftpd32 can be obtained from http://tftpd32.jounin.net. In order to upload
+       the file, set the gateway IP address and ensure the remote file name is
+       `customer_conf.json`, as shown in the figure below.
 
-     ![Gateway Pieces and Connections](/lora-gateway-bridge/img/TektelicPicoTftpSettings.png)
+       ![Gateway Pieces and Connections](/lora-gateway-bridge/img/TektelicPicoTftpSettings.png)
 
 4. Power-cycle the gateway for the new settings to take effect.
 
