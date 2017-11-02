@@ -11,6 +11,8 @@ menu:
 
 Tektelic Pico gateway is supplied with firmware designed to work with specific
 network server. The "Semtech packet forwarder" variant will work with LoRaServer.
+If your Pico gateway is running a different packet forwarder, please contact
+Tektelic to obtain the compatible firmware.
 
 In order to configure the server parameters, create a configuration file and
 upload it to the gateway using TFTP.
@@ -21,8 +23,8 @@ upload it to the gateway using TFTP.
    ```javascript
    {
        "network_server": "example.com",
-       "network_service_up_port": 1780,
-       "network_service_down_port": 1780
+       "network_service_up_port": 1700,
+       "network_service_down_port": 1700
    }
    ```
 2. Connect the Pico gateway to the network and find out the IP address assigned
@@ -43,4 +45,7 @@ upload it to the gateway using TFTP.
         ![Gateway Pieces and Connections](/lora-gateway-bridge/img/TektelicPicoTftpSettings.png)
 
 4. Power-cycle the gateway for the new settings to take effect.
+
+5. Note that the LEDs on the gateway will start reflecting the connected status
+   once there are packets flowing from the sensors to the network server.
 
